@@ -33,11 +33,13 @@
   font-size: 48px;
   font-weight: 100;
   margin: 0;
+  color: #081313;
 }
 
 .subtitle {
   font-size: 64px;
   margin: 0;
+  color: #081313;
 }
 
 .BtnMain {
@@ -77,10 +79,12 @@
 
   .title1 {
     font-size: 24px;
+    color: #8D99A7;
   }
 
   .subtitle {
     font-size: 36px;
+    color: #8D99A7;
   }
 
   .header1 {
