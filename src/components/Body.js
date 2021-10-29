@@ -7,25 +7,21 @@ const Body = () => {
     <div className="headerMain">
       <div className="header1">
         <div className="header2">
-          <h2 className="title1">Hi, Welcome! </h2>
+          <h2 className="title1">Hi, Welcome!</h2>
           <h1 className="subtitle">Grade is good at explaining what I'm doing</h1>
           <button className="BtnMain">Book an Appointment</button>
         </div>
-
         <div className="header3">
           <StaticImage 
             src="../images/banner.png"
-            alt="Company Logo"
+            alt="Main Banner"
             width={1000}
-            height={1000}
             placeholder="tracedSVG"
             quality="80"
           />
         </div>
       </div>
-
     </div>
-    
   )
 }
 

@@ -5,9 +5,12 @@ module.exports = {
     description: "This is a Gatsby Demo Website"
   },
   plugins: [
-    "gatsby-plugin-image",
+    // React Helmet for Seo and MetaData
     "gatsby-plugin-react-helmet",
+    // sitemap for Seo
     "gatsby-plugin-sitemap",
+    // Image Plugins
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {

@@ -1,8 +1,8 @@
 import React from "react"
-import Body from "../components/Body"
-import Header from "../components/Header"
 import Seo from "../components/Seo"
 import { Helmet } from "react-helmet"
+import Header from "../components/Header"
+import Body from "../components/Body"
 
 export default function Home() {
   return (
