@@ -15,6 +15,7 @@ const Body = () => {
           <StaticImage 
             src="../images/banner.png"
             alt="Main Banner"
+            className="mainBanner"
             width={1000}
             placeholder="tracedSVG"
             quality="80"

@@ -22,6 +22,7 @@ const Header = () => {
           src="../images/logo.png"
           alt="Company Logo"
           width={150}
+          className="logoCo"
           placeholder="tracedSVG"
           quality="80" />
       </Link>
