@@ -1,3 +1,11 @@
+.container {
+  display: none;
+}
+
+.nav-collapse {
+  display: none;
+}
+
 .navTop {
   display: flex;
   justify-content: space-between;
@@ -6,7 +14,7 @@
   margin: auto;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  font-family: "DM Sans", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .logo {
@@ -41,7 +49,36 @@
 }
 
 @media (max-width: 768px) {
-  .nav-right {
+
+  .container {
+    display: block;
+  }
+
+  .container2 {
+    position: relative;
+    top: 22px;
+    left: -30px;
+  }
+  
+  .bar1,
+  .bar3 {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+  }
+
+  .bar2 {
+    width: 20px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+
+  .navMain {
     display: none;
   }
 
@@ -54,12 +91,12 @@
     max-width: 95%;
   }
 
-  .nav-collapse {
+  .navResponsive {
     display: block;
     cursor: pointer;
   }
 
-  .collapse {
+  .responsiveTop {
     display: block;
     position: absolute;
     top: 0;
@@ -68,41 +105,37 @@
     padding-top: 3rem;
     background-color: white;
     width: 90%;
+    height: 100%;
+    text-align: center;
     z-index: 1;
-    transform: translateY(-100%);
+    opacity: 0;
   }
 
-  .collapse-link {
-    padding-top: 0.5rem;
+  .respMenu {
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     display: block;
     text-decoration: none;
     color: #081313;
+    margin: 20px;
+    font-size: 30px;
   }
 }
 
 .openNav {
-  animation: navbarOpen 0.5s ease-in-out 0s 1 normal forwards;
+  animation: opened 1s ease-in-out 0s 1 normal forwards;
 }
 
-@keyframes navbarOpen {
-  from {
-    transform: translateX(-100%);
-  }
-  to {
-    transform: translateX(0%);
-  }
+@keyframes opened {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 .closeNav {
-  animation: navbarClose 0.5s ease-in-out 0s 1 normal forwards;
+  animation: closed 1s ease-in-out 0s 1 normal forwards;
 }
 
-@keyframes navbarClose {
-  from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
+@keyframes closed {
+  from {opacity: 1;}
+  to {opacity: 0;}
 }
